@@ -22,6 +22,7 @@
 		D56B4E252767C55B00D0DFED /* MyClientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56B4E242767C55B00D0DFED /* MyClientsView.swift */; };
 		D56B4E272767C97500D0DFED /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56B4E262767C97500D0DFED /* HomeView.swift */; };
 		D56B4E292767DB3B00D0DFED /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D56B4E282767DB3B00D0DFED /* ProjectsView.swift */; };
+		D5C07A842768535000C87E1E /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C07A832768535000C87E1E /* HomeTabView.swift */; };
 		D5E49A1F2767F2930061BA1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5E49A1E2767F2930061BA1F /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		D56B4E242767C55B00D0DFED /* MyClientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClientsView.swift; sourceTree = "<group>"; };
 		D56B4E262767C97500D0DFED /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D56B4E282767DB3B00D0DFED /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		D5C07A832768535000C87E1E /* HomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
 		D5E49A1E2767F2930061BA1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,10 +99,10 @@
 		D56B4E052767C3EA00D0DFED /* Sessions */ = {
 			isa = PBXGroup;
 			children = (
+				D56B4E142767C42400D0DFED /* Managers */,
 				D56B4E172767C43E00D0DFED /* View Models */,
 				D56B4E162767C43500D0DFED /* Models */,
 				D56B4E152767C42E00D0DFED /* Views */,
-				D56B4E142767C42400D0DFED /* Managers */,
 				D56B4E062767C3EA00D0DFED /* SessionsApp.swift */,
 				D5E49A1E2767F2930061BA1F /* GoogleService-Info.plist */,
 				D56B4E0A2767C3EB00D0DFED /* Assets.xcassets */,
@@ -176,6 +178,7 @@
 				D565363A276801C4008818F7 /* CurrentProjectsImageView.swift */,
 				D565363C276802B1008818F7 /* QuickLookView.swift */,
 				D565363E276804C3008818F7 /* QuickLookImageView.swift */,
+				D5C07A832768535000C87E1E /* HomeTabView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				D56B4E1B2767C49600D0DFED /* LoginView.swift in Sources */,
 				D56B4E1D2767C4AF00D0DFED /* RegisterView.swift in Sources */,
 				D56B4E232767C52300D0DFED /* CurrentProjectsView.swift in Sources */,
+				D5C07A842768535000C87E1E /* HomeTabView.swift in Sources */,
 				D56B4E092767C3EA00D0DFED /* ContentView.swift in Sources */,
 				D565363B276801C4008818F7 /* CurrentProjectsImageView.swift in Sources */,
 				D56B4E252767C55B00D0DFED /* MyClientsView.swift in Sources */,
