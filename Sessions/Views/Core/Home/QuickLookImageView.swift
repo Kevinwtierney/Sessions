@@ -13,8 +13,9 @@ struct QuickLookImageView: View {
         
         Image(imageName)
             .resizable()
+            .aspectRatio(contentMode: .fit)
             .frame(width: 400, height: 400, alignment: .center)
-            .background(Color.blue)
+            
             .cornerRadius(5)
             .padding(3)
         
@@ -23,6 +24,6 @@ struct QuickLookImageView: View {
 
 struct QuickLookImageView_Previews: PreviewProvider {
     static var previews: some View {
-        QuickLookImageView(imageName:"foo")
+        QuickLookImageView(imageName:"logo")
     }
 }

@@ -13,17 +13,18 @@ struct LoginView: View {
     @State var email = ""
     @State var password = ""
     
+    @EnvironmentObject var viewModel: AuthManager
+    
     var body: some View {
+        
         NavigationView{
             VStack{
                 Image("logo")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 150, height: 150)
-                    .background(Color.blue)
                     .padding()
                 
-                VStack{
                     TextField("Email Address", text: $email)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
@@ -39,28 +40,33 @@ struct LoginView: View {
                         
                         guard !email.isEmpty, !password.isEmpty else{
                             print("error fields are empty")
+                            
                             return
                         }
-                        
+                        viewModel.signIn(email: email, password: password)
+                        email = ""
+                        password = ""
                         print("Success")
                         
                     }, label: {
                         Text("Sign In")
                             .foregroundColor(Color.white)
                             .frame(width: 200, height: 50)
-                            .background(Color.blue)
+                            .background(Color.black)
                             .cornerRadius(5)
                             .padding()
                     })
                     
                     NavigationLink("Need an account? Sign Up", destination: RegisterView())
-                }
+                        .foregroundColor(Color.black)
+                
                 .padding()
                 Spacer()
                 
             }
             .navigationTitle("Sign In")
         }
+
     }
 }
 

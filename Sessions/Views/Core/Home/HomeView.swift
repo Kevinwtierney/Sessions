@@ -11,7 +11,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView{
             
-            ScrollView{
+            ScrollView(showsIndicators: false){
                 
                 VStack{
                     CurrentProjectsView()
@@ -19,7 +19,7 @@ struct HomeView: View {
                 }
                 
             }
-            .navigationTitle("Sessions")
+            .navigationTitle("Home")
         }
     }
 }

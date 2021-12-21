@@ -15,16 +15,16 @@ struct QuickLookView: View {
             VStack{
                 // Project name and date started
                 Text("Dragon and Samurai")
+                    .font(.system(size: 28))
                     .bold()
-                    .font(.system(size: 22))
                 Text("Canvas: Kevin")
-                Text("12/31/2021")
+                Text("12/31/2021 - 5PM")
                     .font(.caption)
             }
             .padding(.top,10)
             
             // Main Image
-            QuickLookImageView(imageName:"foo")
+            QuickLookImageView(imageName:"logo")
             
             // Main N0te
             
@@ -42,6 +42,8 @@ struct QuickLookView: View {
                     .padding(.leading, 10)
                 
             }
+            .padding()
+            
         }
     }
 }

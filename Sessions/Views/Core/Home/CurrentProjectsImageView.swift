@@ -14,15 +14,15 @@ struct CurrentProjectsImageView: View {
         Image(imageName)
             .resizable()
             .frame(width: 100, height: 100, alignment: .center)
-            .background(Color.blue)
-            .cornerRadius(50)
-            .padding(3)
+            .cornerRadius(5)
+            .padding(5)
+            .padding(.bottom,0)
         
     }
 }
 
 struct CurrentProjectsImageView_Previews: PreviewProvider {
     static var previews: some View {
-        CurrentProjectsImageView(imageName:"foo")
+        CurrentProjectsImageView(imageName:"logo")
     }
 }

@@ -13,13 +13,26 @@ struct CurrentProjectsView: View {
             
             HStack{
                 ForEach(0...10, id: \.self){ num in
-                    CurrentProjectsImageView(imageName: "foo")
+                    VStack{
+                        CurrentProjectsImageView(imageName: "logo")
+                        Text("Kevin")
+                            .foregroundColor(.white)
+                        Text("12/21/2021")
+                            .foregroundColor(.white)
+                        Text("5PM")
+                            .foregroundColor(.white)
+                    }
+                    .background(.black)
+                  
+                    .cornerRadius(10)
                 }
-             
+                
             }
+            
         }
+        .padding(.leading,1)
         
-        Text("Recent Sessions")
+        Text("Next Sessions")
             .bold()
     }
 }

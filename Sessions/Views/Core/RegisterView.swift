@@ -14,16 +14,17 @@ struct RegisterView: View {
     @State var last = ""
     @State var shop = ""
     @State var password = ""
+    
+    @EnvironmentObject var viewModel: AuthManager
    
     
     var body: some View {
-        NavigationView{
+        
             VStack{
                 Image("logo")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 150, height: 150)
-                    .background(Color.blue)
                     .padding()
                 
                 VStack{
@@ -76,18 +77,19 @@ struct RegisterView: View {
                     Button(action: {
                         
                         guard !email.isEmpty, !password.isEmpty,!confirm.isEmpty,
-                              !first.isEmpty,!last.isEmpty,!shop.isEmpty else{
+                              !first.isEmpty,!last.isEmpty,!shop.isEmpty, email == confirm else{
                             print("error fields are empty")
                             return
                         }
                         
+                        viewModel.signUp(email: email, password: password)
                         print("Success")
                         
                     }, label: {
                         Text("Create Account")
                             .foregroundColor(Color.white)
                             .frame(width: 200, height: 50)
-                            .background(Color.blue)
+                            .background(Color.black)
                             .cornerRadius(5)
                             .padding()
                     })
@@ -100,7 +102,7 @@ struct RegisterView: View {
             .navigationTitle("Create Account")
         }
     }
-}
+
 
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeTabView: View {
     var body: some View {
+        
         TabView{
             
             HomeView()
@@ -17,6 +18,7 @@ struct HomeTabView: View {
                     
                     Text("Home")
                 }
+                
             
             ProjectsView()
                 .tabItem {
@@ -29,7 +31,7 @@ struct HomeTabView: View {
                 .tabItem {
                     Image(systemName: "person.3")
                     
-                    Text("Canvas")
+                    Text("Clients")
                 }
             
             AccountView()
@@ -39,6 +41,7 @@ struct HomeTabView: View {
                     Text("Profile")
                 }
         }
+     
     }
 }
 
